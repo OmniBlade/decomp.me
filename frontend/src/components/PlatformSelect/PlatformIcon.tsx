@@ -1,6 +1,7 @@
 import LogoGBA from "./gba.svg"
 import LogoGCWii from "./gc_wii.svg"
 import LogoIRIX from "./irix.svg"
+import LogoLinux from "./linux.svg"
 import LogoMacOSX from "./macosx.svg"
 import LogoMSDOS from "./msdos.svg"
 import LogoN3DS from "./n3ds.svg"
@@ -17,6 +18,7 @@ import LogoWin9x from "./win9x.svg"
 const ICONS = {
     "msdos": LogoMSDOS,
     "irix": LogoIRIX,
+    "linux": LogoLinux,
     "win9x": LogoWin9x,
     "macosx": LogoMacOSX,
     "n64": LogoN64,
