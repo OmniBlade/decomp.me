@@ -69,13 +69,10 @@ MSDOS = Platform(
     name="Microsoft DOS",
     description="x86",
     arch="i686",
-    assemble_cmd='jwasm -c -Fo"$OUTPUT" "$INPUT"',
+    assemble_cmd='omf-as --32 -mmnemonic=intel -msyntax=intel -mnaked-reg -o "$OUTPUT" "$INPUT"',
     objdump_cmd="omf-objdump",
     nm_cmd="omf-nm",
-    asm_prelude="""
-        .386P
-        .model FLAT
-    """,
+    asm_prelude="",
 )
 
 WIN9X = Platform(
